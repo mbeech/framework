@@ -580,7 +580,7 @@ class BelongsToMany extends Relation {
 	 * @param  bool   $touch
 	 * @return void
 	 */
-	protected function updateExistingPivot($id, array $attributes, $touch)
+	public function updateExistingPivot($id, array $attributes, $touch)
 	{
 		if (in_array($this->updatedAt(), $this->pivotColumns))
 		{
